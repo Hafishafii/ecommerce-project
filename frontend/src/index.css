@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
+
 /* Remove the comment if you need to enable dark mode styling, or just ask me  */
 /* @custom-variant dark (&:is(.dark *)); */
 @font-face {
