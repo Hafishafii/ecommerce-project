@@ -9,6 +9,7 @@ import { seedProducts } from "./seeds/product.seed";
 import cookieParser from 'cookie-parser';
 import mongoose from "mongoose";
 import productRoutes from "./routes/product.routes";
+import orderRoutes from './routes/order.routes'
 
 
 const app = express();
@@ -44,6 +45,7 @@ app.get("/", async (_req, res) => {
 app.use('/api/auth', authRoute)
 app.use('/api/cart', cartRoute)
 app.use("/api/products", productRoutes);
+app.use('/api/orders', orderRoutes);
 
 // Error handler
 app.use(errorHandler)
